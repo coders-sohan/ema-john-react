@@ -4,20 +4,20 @@ import './Cart.css';
 const Cart = (props) => {
     const { cart } = props;
     let total = 0;
-    const tax = 20/100;
     for (const product of cart) {
-        if (total > 100) {
-            total = total * tax;
-        }
         total = total + product.price;
     }
+    const shipping = 15;
+    const tax = (total + shipping) / 10;
+    const grandTotal = total + shipping + tax;
     return (
         <div>
             <h3 style={{textAlign: 'center'}}>Order Summary</h3>
             <h5 style={{textAlign: 'center'}}>Items Ordered: {props.cart.length}</h5>
-            <p></p>
-            <p>Total: {total}</p>
-            <p>Tax: {tax}</p>
+            <p>Total: {total.toFixed(2)}</p>
+            <p>Shipping: {shipping}</p>
+            <p>Tax: {tax.toFixed(2)}</p>
+            <p>Grand Total: {grandTotal.toFixed(2)}</p>
         </div>
     );
 };
