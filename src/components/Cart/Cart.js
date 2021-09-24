@@ -14,10 +14,10 @@ const Cart = (props) => {
         <div>
             <h3 style={{textAlign: 'center'}}>Order Summary</h3>
             <h5 style={{textAlign: 'center'}}>Items Ordered: {props.cart.length}</h5>
-            <p>Total: {total.toFixed(2)}</p>
-            <p>Shipping: {shipping}</p>
-            <p>Tax: {tax.toFixed(2)}</p>
-            <p>Grand Total: {grandTotal.toFixed(2)}</p>
+            <p className="cart-items"><span style={{fontWeight: 'bold'}}>Total:</span><span>{total.toFixed(2)}</span></p>
+            <p className="cart-items"><span style={{fontWeight: 'bold'}}>Shipping:</span><span>{shipping}</span></p>
+            <p className="cart-items"><span style={{fontWeight: 'bold'}}>Tax:</span><span>{tax.toFixed(2)}</span></p>
+            <p className="cart-items"><span style={{fontWeight: 'bold'}}>Grand Total:</span><span>{grandTotal.toFixed(2)}</span></p>
         </div>
     );
 };
