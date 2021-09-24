@@ -1,0 +1,56 @@
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 75px;
+    padding: 15px 0;
+}
+
+.header nav {
+    background-color: black;
+    line-height: 40px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.header nav a:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.input-div{
+    background-color: #313131;
+    padding: 20px 0;
+}
+
+.search-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field{
+    width: 60%;
+}
+
+.input-field input{
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    letter-spacing: 3px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.input-field input:focus{
+    border: 2px solid yellowgreen;
+    outline: none;
+}

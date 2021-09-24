@@ -1,0 +1,31 @@
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 20px 20px 20px 0;
+    transition: .5s ease;
+}
+
+.product:hover{
+    border: 1px solid rgba(0, 0, 0, .7);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-regular{
+    background-color: goldenrod;
+    font-size: 16px;
+    color: black;
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn-regular:hover{
+    background-color: gold;
+}
